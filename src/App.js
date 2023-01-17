@@ -7,7 +7,7 @@ const App = () => {
         {/* Overlay */}
         <div className='pl-[1200px]'>
         <div className=' absolute w-[350px] h-full text-gray-200  bg-[#23235b] flex flex-col  pl-2'>
-            <h1 className='pt-8    text-xl'>15<span className='font-bold px-20'>$1000000</span></h1>
+            <h1 className='pt-20    text-xl'>15<span className='font-bold px-20'>$1000000</span></h1>
             <h1 className='   text-xl pt-2'>14<span className='font-bold px-20'>$500000</span></h1>
             <h1 className='   text-xl pt-2'>13<span className='font-bold px-20'>$250000</span></h1>
             <h1 className='   text-xl pt-2'>12<span className='font-bold px-20'>$125000</span></h1>
@@ -23,7 +23,7 @@ const App = () => {
             <h1 className='   text-xl pt-2'>2<span className='font-bold px-[94px]'>$200</span></h1>
             <h1 className='   text-xl pt-2'>1<span className='font-bold px-[94px]'>$100</span></h1>
         </div></div>
-        <img className='w-full  object-cover' src="https://raw.githubusercontent.com/safak/youtube/react-quiz/src/assets/bg.jpg" alt="/" />
+        <img className='w-full   object-cover' src="https://raw.githubusercontent.com/safak/youtube/react-quiz/src/assets/bg.jpg" alt="/" />
     </div>
 </div>
   )
