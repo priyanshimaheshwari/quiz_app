@@ -23,7 +23,7 @@ const App = () => {
             <h1 className='   text-xl pt-2'>2<span className='font-bold px-[94px]'>$200</span></h1>
             <h1 className='   text-xl pt-2'>1<span className='font-bold px-[94px]'>$100</span></h1>
         </div></div>
-        <img className='w-full   object-cover' src="https://rb.gy/lrffuq" alt="/" />
+        <img className='w-full   object-cover' src="https://www.medianews4u.com/wp-content/uploads/2020/02/KBC-1.jpg" alt="/" />
     </div>
 </div>
   )
