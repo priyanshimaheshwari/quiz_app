@@ -9,7 +9,7 @@ const App = () => {
     <div className=' relative'>
     <div className='absolute text-gray-100 p-4'>
         <div className='pt-[300px]'><h1 className='w-28 h-28 border-8  rounded-full p-6 text-5xl'>30</h1></div>
-        <h1 className='pt-[300px]'><Trivia /></h1>
+        <h1 className=''><Trivia /></h1>
       </div>
         {/* Overlay */}
         <div className='pl-[1200px]'>
