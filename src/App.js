@@ -1,39 +1,40 @@
-import React from 'react'
-import Trivia from './components/Trivia'
+import React, { useState } from 'react'
 
 const App = () => {
-  
+  const [questionNumber,setQuestionNumber]=useState(1)
+  const moneyPyramid=[
+    {id:1,amount:"$100"},
+    {id:2,amount:"$200"},
+    {id:3,amount:"$300"},
+    {id:4,amount:"$400"},
+    {id:5,amount:"$500"},
+    {id:6,amount:"$1000"},
+    {id:7,amount:"$2000"},
+    {id:8,amount:"$4000"},
+    {id:9,amount:"$8000"},
+    {id:10,amount:"$16000"},
+    {id:11,amount:"$32000"},
+    {id:12,amount:"$64000"},
+    {id:13,amount:"$125000"},
+    {id:14,amount:"$250000"},
+    {id:15,amount:"$500000"},
+  ].reverse()
   return (
-    <div className='relative'>
+    <div className='h-[800px] flex bg-[#020230] text-white'>
+      <div className='w-3/4 h-full'><img className='w-full h-full items-center' src='https://www.medianews4u.com/wp-content/uploads/2020/02/KBC-1.jpg' alt='/'/>
+      <div>
+        <div></div></div></div>
+      <div className='w-1/4 flex items-center justify-center'>
+        <ul className='w-full p-4'>
+          {moneyPyramid.map((m)=>(
+          <li className={questionNumber===m.id?"bg-teal-400 rounded-xl":"bg-[#020230]"}><div className='flex items-center justify-between  rounded p-2'>
+          <span className='text-xl  '>{m.id}</span>
+          <span className='text-2xl '>{m.amount}</span></div></li>
+          ))}
+            </ul>
+            </div>
       
-    <div className=' relative'>
-    <div className='absolute text-gray-100 p-4'>
-        <div className='pt-[300px]'><h1 className='w-28 h-28 border-8  rounded-full p-6 text-5xl'>30</h1></div>
-        <h1 className=''><Trivia /></h1>
-      </div>
-        {/* Overlay */}
-        <div className='pl-[1200px]'>
-        <div className=' absolute w-[350px] h-full text-gray-200  bg-[#23235b] flex flex-col  pl-2'>
-          
-            <h1 className='pt-20    text-xl'>15<span className='font-bold px-20'>$ 1000000</span></h1>
-            <h1 className='   text-xl pt-2'>14<span className='font-bold px-20'>$ 500000</span></h1>
-            <h1 className='   text-xl pt-2'>13<span className='font-bold px-20'>$ 250000</span></h1>
-            <h1 className='   text-xl pt-2'>12<span className='font-bold px-20'>$ 125000</span></h1>
-            <h1 className='   text-xl pt-2'>11<span className='font-bold px-20'>$ 64000</span></h1>
-            <h1 className='   text-xl pt-2'>10<span className='font-bold px-20'>$ 32000</span></h1>
-            <h1 className='   text-xl pt-2'>9<span className='font-bold px-[94px]'>$ 16000</span></h1>
-            <h1 className='   text-xl pt-2'>8<span className='font-bold px-[94px]'>$ 8000</span></h1>
-            <h1 className='   text-xl pt-2'>7<span className='font-bold px-[94px]'>$ 4000</span></h1>
-            <h1 className='   text-xl pt-2'>6<span className='font-bold px-[94px]'>$ 2000</span></h1>
-            <h1 className='   text-xl pt-2'>5<span className='font-bold px-[94px]'>$ 1000</span></h1>
-            <h1 className='   text-xl pt-2'>4<span className='font-bold px-[94px]'>$ 500</span></h1>
-            <h1 className='   text-xl pt-2'>3<span className='font-bold px-[94px]'>$ 300</span></h1>
-            <h1 className='   text-xl pt-2'>2<span className='font-bold px-[94px]'>$ 200</span></h1>
-            <h1 className='   text-xl pt-2'>1<span className='font-bold px-[94px]'>$ 100</span></h1>
-        </div></div>
-        <img className='w-full   object-cover' src="https://www.medianews4u.com/wp-content/uploads/2020/02/KBC-1.jpg" alt="/" />
     </div>
-</div>
   )
 }
 
