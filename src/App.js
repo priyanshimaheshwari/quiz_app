@@ -76,6 +76,271 @@ const App = () => {
           correct: true,
         },
       ],
+    },{
+      id: 4,
+      question: "For the Olympics and World Tournaments, the dimensions of basketball court are",
+      answers: [
+        {
+          text: "28 m x 15 m",
+          correct: true,
+        },
+        {
+          text: "26 m x 14 m",
+          correct: false,
+        },
+        {
+          text: "27 m x 16 m",
+          correct: false,
+        },
+        {
+          text: "28 m x 16 m",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 5,
+      question: "Logarithm tables were invented by",
+      answers: [
+        
+        {
+          text: "John Doe",
+          correct: false,
+        },
+        {
+          text: "John Napier",
+          correct: true,
+        },
+        {
+          text: "John Harrison",
+          correct: false,
+        },
+        {
+          text: "John Douglas",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      question: "With which sport is the Jules Rimet trophy associated?",
+      answers: [
+        {
+          text: "Football",
+          correct: true,
+        },
+        {
+          text: "Hockey",
+          correct: false,
+        },
+        {
+          text: "Golf",
+          correct: false,
+        },
+        {
+          text: "Basketball",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 7,
+      question: "Kemal Ataturk was",
+      answers: [
+        {
+          text: "revolutionary leader of Soviet Union",
+          correct: false,
+        },
+        {
+          text: "the first President of Independent Kenya",
+          correct: false,
+        },
+        {
+          text: "the founder of modern Turkey",
+          correct: true,
+        },
+        {
+          text: "None of the above",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 8,
+      question: "Kathakali, Mohiniatam and Ottamthullal are the famous dances of",
+      answers: [
+       
+        {
+          text: "Karnataka",
+          correct: false,
+        },
+        {
+          text: "Orissa",
+          correct: false,
+        },
+        {
+          text: "Tamil Nadu",
+          correct: false,
+        },
+        {
+          text: "Kerala",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 9,
+      question: "Jaspal Rana is associated with which of the following games?",
+      answers: [
+        {
+          text: "Shooting",
+          correct: true,
+        },
+        {
+          text: "Swimming",
+          correct: false,
+        },
+        {
+          text: "Archery",
+          correct: false,
+        },
+        {
+          text: "Weightlifting",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      question: "Lance Armstrong, a sportsperson of international repute, belongs to which of the following countries?",
+      answers: [
+        {
+          text: "USA",
+          correct: true,
+        },
+        {
+          text: "Ukraine",
+          correct: false,
+        },
+        {
+          text: "Spain",
+          correct: false,
+        },
+        {
+          text: "Brazil",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 11,
+      question: "Kiran Bedi is",
+      answers: [
+        {
+          text: "first woman IPS officer",
+          correct: true,
+        },
+        {
+          text: "first woman advocate",
+          correct: false,
+        },
+        {
+          text: "first woman IAS officer",
+          correct: false,
+        },
+        {
+          text: "first woman judge",
+          correct: false,
+        },
+      ],
+    },{
+      id: 12,
+      question: "National Defence Academy is situated at",
+      answers: [
+       
+        {
+          text: "New Delhi",
+          correct: false,
+        },
+        {
+          text: "Khadakvasla",
+          correct: true,
+        },
+        {
+          text: "Wellington",
+          correct: false,
+        },
+        {
+          text: "Dehradun",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 13,
+      question: "Number of commands of Air Force are",
+      answers: [
+        {
+          text: "five",
+          correct: false,
+        },
+        {
+          text: "six",
+          correct: false,
+        },
+        {
+          text: "seven",
+          correct: true,
+        },
+        {
+          text: "eight",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 14,
+      question: "Normally the Commonwealth Games are held at intervals of",
+      answers: [
+        {
+          text: "4 years",
+          correct: true,
+        },
+        {
+          text: "3 years",
+          correct: false,
+        },
+        {
+          text: "5 years",
+          correct: false,
+        },
+        {
+          text: "there is no fixed interval",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 15,
+      question: "Mount Everest was captured by Edmund Hillary and Tenzing Norgay in the year",
+      answers: [
+        {
+          text: "1953",
+          correct: true,
+        },
+        {
+          text: "1995",
+          correct: false,
+        },
+        {
+          text: "1956",
+          correct: false,
+        },
+        {
+          text: "1953",
+          correct: false,
+        },
+      ],
     },
   ];
 
@@ -92,7 +357,7 @@ const App = () => {
         { id: 8, amount: "$ 8000" },
         { id: 9, amount: "$ 16000" },
         { id: 10, amount: "$ 32000" },
-        { id: 11, amount: "$ 64000" },
+        { id: 11, amount: " $ 64000" },
         { id: 12, amount: "$ 125000" },
         { id: 13, amount: "$ 250000" },
         { id: 14, amount: "$ 500000" },
