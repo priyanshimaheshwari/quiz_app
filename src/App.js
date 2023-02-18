@@ -2,11 +2,13 @@ import React, { useEffect, useMemo, useState } from 'react'
 import "./App.css";
 import Timer from './components/Timer';
 import Trivia from './components/Trivia';
+import Start from './components/Start';
 
 
 const App = () => {
   const [timeOut, setTimeOut] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(1);
+  const [username, setUsername] = useState(null);
   const [earned, setEarned] = useState("$ 0");
   const data = [
     {
@@ -105,6 +107,10 @@ const App = () => {
 
   return (
     <div className='h-[800px] flex bg-[#020230] text-white'>
+      {!username ? (
+        <Start setUsername={setUsername} />
+        ) : (
+          <>
       <div className='w-3/4 h-full'><img className='w-3/4 h-[800px] items-center flex absolute' src='https://thescoopbeats.com/wp-content/uploads/2020/09/05_09_2020-kbc_20711034.jpg' alt='/'/>
 
       {timeOut ?(<h1 className='text-white relative text-6xl pl-[400px] pt-[400px]'>You earned : {earned}</h1>):(
@@ -136,7 +142,8 @@ const App = () => {
           ))}
             </ul>
             </div>
-      
+            </>
+        )}
     </div>
   )
 }
