@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import "./App.css";
+import Timer from './components/Timer';
 import Trivia from './components/Trivia';
 
 
@@ -109,7 +110,10 @@ const App = () => {
       {timeOut ?(<h1 className='text-white relative text-6xl pl-[400px] pt-[400px]'>You earned : {earned}</h1>):(
        <>
       <div className='top'>
-        <div className='timer'>30</div><div className=' pt-[350px]'><Trivia
+        <div className='timer'> <Timer
+                      setTimeOut={setTimeOut}
+                      questionNumber={questionNumber}
+                    /></div><div className=' pt-[350px]'><Trivia
                     data={data}
                     questionNumber={questionNumber}
                     setQuestionNumber={setQuestionNumber}
